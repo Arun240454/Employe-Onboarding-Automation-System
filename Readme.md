@@ -11,6 +11,12 @@ A Streamlit app that automates employee onboarding. Enter an employee's **name**
 
 Content is tailored with rule-based logic (role family, leadership detection, department). It runs entirely locally, with no external APIs. The full package can be downloaded as Markdown.
 
+## Live Demo
+
+**https://arun240454.github.io/Employe-Onboarding-Automation-System/**
+
+Runs fully in your browser (Streamlit via WebAssembly using [stlite](https://github.com/whitphx/stlite)) and is hosted on GitHub Pages. The first load takes about 20-40 seconds while Python starts up.
+
 ## Run
 
 ```bash
