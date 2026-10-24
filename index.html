@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Employee Onboarding System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/browser@1.12.0/build/stlite.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module">
+      import { mount } from "https://cdn.jsdelivr.net/npm/@stlite/browser@1.12.0/build/stlite.js";
+
+      // Runs the unmodified app.py in the browser (Streamlit on Pyodide/WebAssembly).
+      const code = await (await fetch("app.py")).text();
+      mount(
+        { entrypoint: "app.py", files: { "app.py": code } },
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
