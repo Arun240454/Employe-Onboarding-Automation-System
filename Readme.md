@@ -16,7 +16,7 @@ Content is tailored with rule-based logic (role family, leadership detection, de
 ```bash
 python -m venv .venv
 .venv\Scripts\activate        # macOS/Linux: source .venv/bin/activate
-pip install streamlit
+pip install -r requirements.txt
 streamlit run app.py
 ```
 
